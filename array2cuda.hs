@@ -41,6 +41,7 @@ showelem (x:y) itr = eval x ++ ", " ++ showelem y (itr - 1);
 main :: IO ()
 main = do
 -- Write input here
-  let input = Mul (Array [[Const 1.0, Const 2.0], [Const 3.0, Const 4.0]]) (Array [[Const 5.0, Const 6.0], [Const 3.0, Const 2.0]])
+-- let input = Mul (Array [[Const 1.0, Const 2.0], [Const 3.0, Const 4.0]]) (Array [[Const 5.0, Const 6.0], [Const 3.0, Const 2.0]])
+  let input = Mul (Array [[Const 1.0, Const 2.0, Const 3.0], [Const 3.0, Const 4.0, Const 5.0], [Const 6.0, Const 7.0, Const 8.0]]) (Array [[Const 5.0, Const 6.0, Const 2.0], [Const 3.0, Const 2.0, Const 3.0], [Const 4.0, Const 5.0, Const 6.0]])
   let output = eval input
   print output
